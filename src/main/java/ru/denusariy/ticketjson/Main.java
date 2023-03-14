@@ -16,7 +16,6 @@ public class Main {
                 averageTime(tickets) + " часов.");
         System.out.println("90-й процентиль времени полета между городами Владивосток и Тель-Авив составляет "
                 + percentile(tickets) + " часов");
-
     }
 
     public static List<Ticket> getTicketsFromFile() {

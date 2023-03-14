@@ -33,7 +33,7 @@ public class Ticket {
 
     public Date getDepartureDateTime() {
         SimpleDateFormat format = new SimpleDateFormat();
-        format.applyPattern("dd.MM.yy hh:mm");
+        format.applyPattern("dd.MM.yy HH:mm");
         try {
             return format.parse(this.getDepartureDate() + " " + this.getDepartureTime());
         } catch (ParseException e) {
@@ -44,7 +44,7 @@ public class Ticket {
 
     public Date getArrivalDateTime() {
         SimpleDateFormat format = new SimpleDateFormat();
-        format.applyPattern("dd.MM.yy hh:mm");
+        format.applyPattern("dd.MM.yy HH:mm");
         try {
             return format.parse(this.getArrivalDate() + " " + this.getArrivalTime());
         } catch (ParseException e) {
